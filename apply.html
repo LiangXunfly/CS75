@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>apply the course</title>
+	</head>
+	<body>
+		<div align="center">
+			<form name="apply" action="apply.php" method="POST">
+				姓名：<input name="name" type="text" /><br/>
+				电子邮箱:<input name="email" type="text" /><br/>
+				组长：<input name="captain"type="checkbox" value="组"><br />
+				性别：男：<input name="gender" type="radio" value="m">
+				女：<input name="gender" type="radio" value="f"> <br/>
+				课程：
+				<select name="courses[]" multiple="multiple" size="4">
+					<option value="Java">Java</option>
+					<option value="C">C</option>
+					<option value="Python">Python</option>
+					<option value="Php">Php</option>
+				</select>
+				</br>
+				<input name="submit" type="submit" value="申请" />	
+			</form>
+		</div>
+	</body>
+</html>
